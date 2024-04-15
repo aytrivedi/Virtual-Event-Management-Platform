@@ -8,39 +8,39 @@ chai.use(chaiHttp);
 
 describe("Test Events", () => {
   let signupBody1 = {
-    email: "test3@example.com",
-    password: "abc123",
+    email: "test1@test.com",
+    password: "12345678",
     type: "USER",
-  };
+  }
   let loginbody1 = {
-    email: "test3@example.com",
-    password: "abc123",
+    email: "test1@test.com",
+    password: "12345678",
   };
   let signupBody2 = {
-    email: "test4@example.com",
-    password: "abc123",
+    email: "test2@test.com",
+    password: "12345678",
     type: "ADMIN",
   };
   let loginbody2 = {
-    email: "test4@example.com",
-    password: "abc123",
+    email: "test2@test.com",
+    password: "12345678",
   };
   let token = ''
   let token2 = ''
   let eventId=''
   let eventBody = {
-    event_name: "Test Show",
-    venue: "ABCD Auditorium",
-    date: "2024-03-14",
-    time: "19:00:00",
-    seats: 30
+    event_name: "Talent Hunt",
+    venue: "Delhi Auditorium",
+    date: "2024-04-16",
+    time: "11:00:00",
+    seats: 50
   };
 
   let participant = 
   {
-    email: "siddhartvaidya164@gmail.com",
-    name: "Siddharth Vaidya",
-    contact: "6266740889"
+    email: "ayushtrivedi26@gmail.com",
+    name: "Ayush Trivedi",
+    contact: "1234567899"
 }
   
 

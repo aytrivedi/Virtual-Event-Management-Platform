@@ -8,13 +8,13 @@ chai.use(chaiHttp);
 
 describe("verify login", () => {
     let signupBody = {
-      email: "test1@example.com",
-      password: "abc123",
+      email: "test1@test.com",
+      password: "12345678",
       type: 'USER'
     };
   let body = {
-    email: "test1@example.com",
-    password: "abc123"
+    email: "test1@test.com",
+    password: "12345678"
   };
 
   before((done) =>{
@@ -41,7 +41,7 @@ describe("verify login", () => {
       });
   });
   it("2. wrong password", (done) => {
-    body.password = "djdj";
+    body.password = "123456";
     chai
       .request(server)
       .post("/users/login")
@@ -55,7 +55,7 @@ describe("verify login", () => {
       });
   });
   it("3. wrong email", (done) => {
-    body.email = "aa@gm.com";
+    body.email = "sh@gmail.com";
     chai
       .request(server)
       .post("/users/login")
@@ -80,7 +80,7 @@ describe("verify login", () => {
       });
   });
   it("5. no password", (done) => {
-    body.email = 'test1@example.com';
+    body.email = 'test1@test.com';
     body.password = "";
     chai
       .request(server)

@@ -7,8 +7,8 @@ chai.use(chaiHttp)
 
 describe('verify signup', ()=>{
     let body = {
-        email: 'test@example.com',
-        password: 'abc123',
+        email: 'test1@test.com',
+        password: '12345678',
         type: 'USER'
     }
     
